@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="C:/Program Files/sublime text archivos/Javascript/proyecto final/CV Proyecto-Front end/Styles.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body>
+
+	<div class="contenedor_del_html"><!--inicia el contenedor-->
+		
+		<div class="encavezado">
+			<div class="menu">
+				<nav>
+					<ul class="lista">
+						<li><a href="#cuerpo1">Sobre mi</a></li>
+						<li><a href="#cuerpo2">Habilidades</a></li>
+						<li><a href="#cuerpo3">Experiencia</a></li>
+						<li><a href="#">Contacto</a></li>
+					</ul>
+				</nav>
+				
+			</div>
+			
+		</div>
+
+		<div class="contenedor_retrato">
+
+			<div class="retrato">
+				<img id="foto" src="https://randomuser.me/api/portraits/men/94.jpg" alt="Mark Smitt" title="Mark Smitt">
+			</div>
+				
+		</div>
+
+		<div class="nombre">
+				<h1 id="mark">Mark Smitt</h1>
+				<p id="front"> Front End Developer</p>
+				
+			
+		</div>
+
+		<div class="cuerpo1">
+			<a name="cuerpo1"/>
+
+			<h1 id ="sobre_mi" class="fa fa-address-card">&nbsp;&nbsp;Informacion personal</h1>
+		</div>
+
+
+		<div class="lista_personal">
+			<ul id="sobre_mi_lista">
+				<li><i class="fas fa-2x fa-flag" style="color:blue;"></i>&nbsp;&nbsp;Nacionalidad:<em>&nbsp;Argentina</em></li>
+				<li><i class="fa fa-2x fa-child" style="color:silver";></i>&nbsp;&nbsp;&nbsp;&nbsp;Edad: <em>34</em></li>
+				<li><i class="fa fa-2x fa-tasks" style="color:navy;"></i>&nbsp;&nbsp;Profesión: <em>Programador Web</em></li>
+				<li><i class="fa fa-2x fa-envelope" style="color:fuchsia;"></i>&nbsp;&nbsp;E-mail: <em>Lorem@ipsum.com</em></li>
+				<li><i id="one" class="fa fa-2x fa-map-marker" style="color:skyblue;"></i>&nbsp;&nbsp;&nbsp;&nbsp;Localidad: <em> Mar del Plata</em></li>
+			</ul>
+
+			
+
+		</div>
+
+		<div class="cuerpo2">
+			<a name="cuerpo2"/>
+
+			<h1 id ="habilidades" class="fa fa-address-card">&nbsp;&nbsp;Habilidades</h1>
+		</div>
+
+		<div class="lista_habilidades" id="lst">
+			
+			<ul id="habilidades_lista">
+				<li><i class="fab fa-2x fa-html5" style="color: red;"></i>&nbsp;&nbsp;HTML:</li>
+				<p class="descripcion"><em>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </em></p>
+				<span id="hideText" class="hideText">
+				
+				
+
+
+				<li><i class="fab fa-2x fa-css3" style="color: orange;"></i>&nbsp;&nbsp;CSS:</li>
+				<p class="descripcion"><em>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </em></p>
+
+				<li><i class="fab fa-2x fa-js" style="color: yellow"></i>&nbsp;&nbsp;JavaScript:</li>
+				<p class="descripcion"><em>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </em></p>
+
+				<li><i class="fas fa-2x fa-database" style="color: blue;"></i>&nbsp;&nbsp;Database:</li>
+				<p class="descripcion"><em>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </em></p>
+				<li><i class="fab fa-2x fa-java" style="color: green;"></i>&nbsp;&nbsp;Java:</li>
+				<p class="descripcion"><em>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </em></p>
+
+			</ul>
+			<div class="div_boton">
+				<button class="readMore_btn" id="readMore_btn">&nbsp;&nbsp;Leer mas</button>
+				
+			</div>
+		</div>	
+			
+			
+		
+		<div class="cuerpo3">
+			<a name="cuerpo3"/>
+			<h1 id ="experiencia" class="fa fa-network-wired">&nbsp;&nbsp;Experiencia Laboral</h1>
+						
+		</div>
+
+		<div class="lista_experiencia">
+			<ul id="experiencia_lista">
+				<li><i class="fa-sharp fa-2x fa fa-barcode" style="color: purple;"></i>&nbsp;&nbsp;Bank of State</li>	
+				<p>Periodo: 2015-2019</p>	
+				<p class="descripcion">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>						
+				<li><i class="fa fa-2x fa-mosque" style="color: violet;"></i>&nbsp;&nbsp;Bank of City</li>
+				<p> Periodo: 2019-2021</p>
+				<p class="descripcion">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+				
+			</ul>
+			
+		</div>
+
+		<div class="contact_form">
+
+    <div class="formulario">      
+      <h1>Formulario de contacto</h1>
+        <h3>Escríbenos y en breve los pondremos en contacto contigo</h3>
+
+
+          <form action="submeter-formulario.php" method="post">       
+
+            
+                <p>
+                  <label for="nombre" class="colocar_nombre">Nombre
+                    <span class="obligatorio">*</span>
+                  </label>
+                    <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+                </p>
+              
+                <p>
+                  <label for="email" class="colocar_email">Email
+                    <span class="obligatorio">*</span>
+                  </label>
+                    <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+                </p>
+            
+                <p>
+                  <label for="telefone" class="colocar_telefono">Teléfono
+                  </label>
+                    <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+                </p>    
+              
+                <p>
+                  <label for="website" class="colocar_website">Sitio web
+                  </label>
+                    <input type="url" name="introducir_website" id="website" placeholder="Escribe la URL de tu web">
+                </p>    
+              
+                <p>
+                  <label for="asunto" class="colocar_asunto">Asunto
+                    <span class="obligatorio">*</span>
+                  </label>
+                    <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
+                </p>    
+              
+                <p>
+                  <label for="mensaje" class="colocar_mensaje">Mensaje
+                    <span class="obligatorio">*</span>
+                  </label>                     
+                                    <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
+                                </p>                    
+              
+                <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
+
+                <p class="aviso">
+                  <span class="obligatorio"> * </span>los campos son obligatorios.
+                </p>          
+            
+          </form>
+    </div>  
+  </div>
+
+
+		  <!-- formulario de contacto en html y css -->  
+
+  
+			
+		
+		
+</div><!--termina el contenedor-->
+	
+
+<script src="C:/Program Files/sublime text archivos/Javascript/proyecto final/CV Proyecto-Front end/Script.js"></script>
+
+
+</body>
+</html>
